@@ -19,13 +19,10 @@ const ImagesExampleDynamic = async ({ src }: ImagesExampleProps) => {
         <Image
           src={src}
           alt="dynamic"
-          // width={200}
-          // height={400}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           placeholder="blur"
           blurDataURL={base64}
-          // className="w-50 h-100"
         />
       </div>
     </div>
