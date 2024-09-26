@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import img from "../../public/unsplash.jpg";
+
 import { getPlaiceholder } from "plaiceholder";
 import fs from "node:fs/promises";
 
@@ -16,7 +16,7 @@ const ImagesExampleDynamic = async ({ src }: ImagesExampleProps) => {
     <div className="flex flex-col gap-4">
       <p>Dynamic Image</p>
       <Image
-        src={img}
+        src={src}
         alt="dynamic"
         width={200}
         height={400}

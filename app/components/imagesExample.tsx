@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import img from "../../public/unsplash.jpg";
+import img from "../../public/images/unsplash.jpg";
 
 const ImagesExample = () => {
   return (

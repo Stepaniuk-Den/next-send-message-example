@@ -1,7 +1,7 @@
 import Contact from "./components/contact";
 import ImagesExampleStatic from "./components/imagesExampleStatic";
 import styles from "./page.module.css";
-import StaticImage from "../public/unsplash.jpg";
+import StaticImage from "../public/images/unsplash.jpg";
 import ImagesExampleDynamic from "./components/imagesExampleDynamic";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
           <p className="text-xl mb-5">imagesExamples</p>
           <div className="flex gap-5">
             <ImagesExampleStatic src={StaticImage} />
-            <ImagesExampleDynamic src={"/unsplash.jpg"} />
+            <ImagesExampleDynamic src={"/images/unsplash.jpg"} />
           </div>
         </div>
       </main>
