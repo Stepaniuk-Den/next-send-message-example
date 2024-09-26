@@ -18,7 +18,7 @@ const Contact: FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className="w-80">
       <div className="mb-5">
         <label
           htmlFor="name"
