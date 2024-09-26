@@ -3,5 +3,5 @@
 
 const nextConfig = {};
 
-export default nextConfig;
-// export default withPlaiceholder(nextConfig);
+// export default nextConfig;
+export default withPlaiceholder(nextConfig);
