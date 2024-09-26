@@ -22,7 +22,7 @@ const Contact: FC = () => {
       <div className="mb-5">
         <label
           htmlFor="name"
-          className="mb-3 block text-base font-medium text-black"
+          className="mb-3 block text-base font-medium text-white"
         >
           Full Name
         </label>
@@ -36,7 +36,7 @@ const Contact: FC = () => {
       <div className="mb-5">
         <label
           htmlFor="email"
-          className="mb-3 block text-base font-medium text-black"
+          className="mb-3 block text-base font-medium text-white"
         >
           Email Address
         </label>
@@ -50,7 +50,7 @@ const Contact: FC = () => {
       <div className="mb-5">
         <label
           htmlFor="message"
-          className="mb-3 block text-base font-medium text-black"
+          className="mb-3 block text-base font-medium text-white"
         >
           Message
         </label>
