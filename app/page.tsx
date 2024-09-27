@@ -5,7 +5,7 @@ import StaticImage from "../public/images/unsplash.jpg";
 import ImagesExampleDynamic from "./components/imagesExampleDynamic";
 import Link from "next/link";
 import MultipleImages from "./components/multipleImages";
-import SingleImage from "./components/singleImage";
+// import SingleImage from "./components/singleImage";
 
 const slug = { static: "static", dynamic: "dynamic" };
 
@@ -20,7 +20,7 @@ export default function Home() {
             <ImagesExampleStatic src={StaticImage} />
             <ImagesExampleDynamic src={"/images/unsplash.jpg"} />
             <MultipleImages />
-            <SingleImage src={"/images/unsplash.jpg"} />
+            {/* <SingleImage src={"/images/unsplash.jpg"} /> */}
           </div>
         </div>
         <Link href={`/${slug.static}`}>Go to Static Images Page</Link>
