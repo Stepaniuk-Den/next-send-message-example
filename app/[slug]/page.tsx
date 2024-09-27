@@ -1,8 +1,8 @@
-// import ImagesExampleDynamic from "../components/imagesExampleDynamic";
+import ImagesExampleDynamic from "../components/imagesExampleDynamic";
 import ImagesExampleStatic from "../components/imagesExampleStatic";
 import StaticImage from "../../public/images/unsplash.jpg";
 import Link from "next/link";
-import MultipleImages from "../components/multipleImages";
+// import MultipleImages from "../components/multipleImages";
 // import SingleImage from "../components/singleImage";
 
 type Props = {
@@ -19,8 +19,8 @@ const ImagesPage = ({ params: { slug } }: Props) => {
         {slug === "static" && <ImagesExampleStatic src={StaticImage} />}
         {slug === "dynamic" && (
           <>
-            {/* <ImagesExampleDynamic src={"/images/unsplash.jpg"} /> */}
-            <MultipleImages />
+            <ImagesExampleDynamic src={"/images/unsplash.jpg"} />
+            {/* <MultipleImages /> */}
             {/* <SingleImage src={"/images/unsplash.jpg"} /> */}
           </>
         )}

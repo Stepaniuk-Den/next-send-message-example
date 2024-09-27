@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import StaticImage from "../public/images/unsplash.jpg";
 import ImagesExampleDynamic from "./components/imagesExampleDynamic";
 import Link from "next/link";
-import MultipleImages from "./components/multipleImages";
+// import MultipleImages from "./components/multipleImages";
 // import SingleImage from "./components/singleImage";
 
 const slug = { static: "static", dynamic: "dynamic" };
@@ -19,7 +19,7 @@ export default function Home() {
           <div className="flex gap-5">
             <ImagesExampleStatic src={StaticImage} />
             <ImagesExampleDynamic src={"/images/unsplash.jpg"} />
-            <MultipleImages />
+            {/* <MultipleImages /> */}
             {/* <SingleImage src={"/images/unsplash.jpg"} /> */}
           </div>
         </div>
