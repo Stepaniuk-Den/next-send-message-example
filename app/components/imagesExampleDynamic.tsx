@@ -2,15 +2,20 @@ import React from "react";
 import Image from "next/image";
 
 import { getPlaiceholder } from "plaiceholder";
-import fs from "node:fs/promises";
+// import fs from "node:fs/promises";
 
 interface ImagesExampleProps {
   src: string;
 }
 
 const ImagesExampleDynamic = async ({ src }: ImagesExampleProps) => {
-  const buffer = await fs.readFile(`./public${src}`);
-  const { base64 } = await getPlaiceholder(buffer);
+  const imageUrl = `${process.env.NEXT_PUBLIC_BASE_URL}${src}`; // Шлях до зображення через URL
+
+  const response = await fetch(imageUrl);
+  const buffer = await response.arrayBuffer();
+  const { base64 } = await getPlaiceholder(Buffer.from(buffer));
+  // const buffer = await fs.readFile(`./public${src}`);
+  // const { base64 } = await getPlaiceholder(buffer);
 
   return (
     <div className="flex flex-col gap-4">
