@@ -21,7 +21,7 @@ const ImagesPage = ({ params: { slug } }: Props) => {
         {slug === "dynamic" && (
           <>
             <ImagesExampleDynamic
-              src={"/images/unsplash.jpg"}
+              src={"/images/unsplash1.jpg"}
               images={images}
             />
             {/* <MultipleImages /> */}

@@ -6,7 +6,7 @@ import Image, { StaticImageData } from "next/image";
 
 interface ImagesExampleProps {
   src: string;
-  images?: {
+  images: {
     img: StaticImageData;
     name: string;
   }[];
