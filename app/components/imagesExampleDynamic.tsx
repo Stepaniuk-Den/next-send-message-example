@@ -12,9 +12,12 @@ interface ImagesExampleProps {
   }[];
 }
 
-const ImagesExampleDynamic = async ({ src, images }: ImagesExampleProps) => {
+const ImagesExampleDynamic = ({ src, images }: ImagesExampleProps) => {
+  // not working in app router [slug]=========
+  // const ImagesExampleDynamic = async ({ src, images }: ImagesExampleProps) => {
   // const buffer = await fs.readFile(`./public${src}`);
   // const { base64 } = await getPlaiceholder(buffer);
+  // =========================================
   if (!images) return;
 
   const imageName = src.split("/").pop()?.split(".")[0];

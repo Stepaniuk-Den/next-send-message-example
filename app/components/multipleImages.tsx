@@ -5,15 +5,15 @@ import Image from "next/image";
 import { getPlaiceholder } from "plaiceholder";
 
 const getImages = async (pattern: string) => {
-  const files = await fg(pattern); // Використовуємо fast-glob для пошуку файлів
+  const files = await fg(pattern);
   return Promise.all(
     files.map(async (file) => {
-      const src = file.replace("./public", ""); // Видаляємо "public" з шляху до файлу
-      const buffer = await fs.readFile(file); // Асинхронно читаємо файл
+      const src = file.replace("./public", "");
+      const buffer = await fs.readFile(file);
 
-      const plaiceholder = await getPlaiceholder(buffer); // Генеруємо плацхолдер
+      const plaiceholder = await getPlaiceholder(buffer);
 
-      return { ...plaiceholder, img: { src } }; // Повертаємо плацхолдер і шлях до зображення
+      return { ...plaiceholder, img: { src } };
     })
   );
 };
