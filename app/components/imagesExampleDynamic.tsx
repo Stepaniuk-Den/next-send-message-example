@@ -26,7 +26,7 @@ const ImagesExampleDynamic = ({ src, images }: ImagesExampleProps) => {
   if (!currentImg) return;
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 ">
       <p>Dynamic Image</p>
       <div className="relative w-60 h-80">
         <Image
